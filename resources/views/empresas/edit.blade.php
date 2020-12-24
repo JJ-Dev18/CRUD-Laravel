@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title','Agregar Empresas')
+@section('title','Editar Empresas')
 @section('content')
 
 <div class="form">

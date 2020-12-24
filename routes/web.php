@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('empresas','EmpresaController');
+Route::resource('ventas', 'VentaController');
 // Route::get('/empresas',[EmpresaController::class, 'index'])->name('empresas.index');
 // Route::get('/empresas/create', [EmpresaController::class , 'create'])->name('empresas.create');
 

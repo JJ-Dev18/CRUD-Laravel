@@ -13,7 +13,7 @@
           <a href="{{route('empresas.index')}}">Empresas</a>
        </li>
        <li class="nav-item">
-       <a href="{{route('empresas.create')}}">Ventas</a>
+       <a href="{{route('ventas.index')}}">Ventas</a>
        </li>
        </ul>
    </header>
