@@ -1,0 +1,25 @@
+body {
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    padding: 20px 0;
+    background: #eec;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.nav-item a:hover {
+    transform: scale(4deg);
+    color: burlywood;
+}
