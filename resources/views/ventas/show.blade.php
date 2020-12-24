@@ -2,14 +2,23 @@
 @section('title', 'Venta |'. $venta->cliente)
 
 @section('content')
+<div class="content">
+<ul class="list">
+  <li class="item-list">Id : {{$venta->id}}</li>
+  <li class="item-list">Cliente : {{$venta->cliente}}</li>
+  <li class="item-list">Empresa : {{$venta->empresa->nombre}}</li>
+</ul>
 
-<h1>{{$venta->id}}</h1>
-<h1>{{$venta->cliente}}</h1>
-<a href="{{ route('ventas.edit',$venta)}}">Editar</a>
+<div class="actions">
+  <button class="btn-edit" onclick="location.href = '{{ route('ventas.edit',$venta)}}'">Editar</button>
+
 <form method="POST" action="{{ route ('ventas.destroy',$venta )}}">
 @CSRF @method('DELETE')
-<button>Eliminar </button>
+<button class="btn-delete">Eliminar </button>
 </form>
+</div>
+</div>
+
 
 
 @endsection

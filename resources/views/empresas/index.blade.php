@@ -2,16 +2,16 @@
 @section('title','Empresas')
 @section('content')
 
-  <div class="content-empresas">
+  <div class="content">
    <h1 class="title-empresas">Empresas</h1>
-    <ul>
+    <ol class="list">
      @forelse($empresas as $empresa)
-     <li><a href="{{route('empresas.show',$empresa)}}">{{$empresa['nombre']}}</a></li>
+     <li class="item-list"><a href="{{route('empresas.show',$empresa)}}">{{$empresa['nombre']}}</a></li>
      @empty
-     <li>No hay Empresas para mostrar</li>
+     <li class="item-list">No hay Empresas para mostrar</li>
      @endforelse
-    </ul>
-     <input type ='button' class="btn btn-warning"  value ='Agregar Empresa' onclick="location.href = '{{ route('empresas.create') }}'"/>
+    </ol>
+     <input type ='button' class="btn-add"  value ='Agregar Empresa' onclick="location.href = '{{ route('empresas.create') }}'"/>
   </div>
 
 @endsection

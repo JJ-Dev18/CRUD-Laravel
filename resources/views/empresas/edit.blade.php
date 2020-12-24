@@ -2,7 +2,7 @@
 @section('title','Editar Empresas')
 @section('content')
 
-<div class="form">
+<div class="content">
  <h1>Editar  empresa </h1>
  @include('partials.validation-errors')
 
@@ -10,7 +10,7 @@
     @CSRF @method('PATCH')
    <label for="">Nombre de la empresa</label>
    <input type="text" name="nombre" value="{{old('nombre', $empresa->nombre)}}">
-   <button class="btn-subtmit"> Actualizar</button>
+   <button class="btn-add"> Actualizar</button>
  </form>
 </div>
 

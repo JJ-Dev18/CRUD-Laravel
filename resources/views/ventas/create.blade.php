@@ -2,7 +2,7 @@
 @section('title','Agregar Empresas')
 @section('content')
 
-<div class="form">
+<div class="content">
  <h1> Agregar nueva venta </h1>
  @include('partials.validation-errors')
 
@@ -11,8 +11,8 @@
    <label for="">Nombre del cliente</label>
    <input type="text" name="cliente">
    <label>Id de la empresa</label>
-   <input type="num" name="empresa_id">
-   <button class="btn-subtmit"> Agregar</button>
+   <input type="num" name="empresa_id" >
+   <button class="btn-add"> Agregar</button>
  </form>
 </div>
 

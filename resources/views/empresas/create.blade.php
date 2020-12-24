@@ -2,7 +2,7 @@
 @section('title','Agregar Empresas')
 @section('content')
 
-<div class="form">
+<div class="content">
  <h1> Agregar nueva empresa </h1>
  @include('partials.validation-errors')
 
@@ -10,7 +10,7 @@
     @CSRF
    <label for="">Nombre de la empresa</label>
    <input type="text" name="nombre">
-   <button class="btn-subtmit"> Agregar</button>
+   <button class="btn-add"> Agregar</button>
  </form>
 </div>
 

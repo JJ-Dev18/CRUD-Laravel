@@ -23,3 +23,69 @@ body {
     transform: scale(4deg);
     color: burlywood;
 }
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: auto;
+    width: 50%;
+}
+.title-empresas {
+    text-align: center;
+}
+.item-list a{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.item-list {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.actions a{
+    margin:10px
+}
+.btn-add{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #eec;
+    border: none;
+    margin-top: 10px;
+}
+.btn-add:hover{
+    background: #eea;  
+}
+.btn-delete{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgb(230, 61, 61);
+    border: none;   
+}
+.btn-delete:hover{
+    background: rgb(236, 2, 2);
+}
+.btn-edit{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgb(88, 141, 240);
+    border: none;
+    margin-top: 10px;
+}
+.btn-edit:hover{
+    background: rgb(12, 83, 214);
+}
+form{
+    margin-top: 10px;
+    
+}
+form input,label{
+    margin-right: 10px;
+}

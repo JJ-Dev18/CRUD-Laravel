@@ -3,5 +3,6 @@
 
 
 return [
-  'required' => 'Este campo es obligatorio.'
+  'required' => 'El campo :attribute es obligatorio.',
+  
 ];
